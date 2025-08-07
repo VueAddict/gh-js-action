@@ -31844,7 +31844,7 @@ async function run() {
     // myToken: ${{ secrets.GITHUB_TOKEN }}
     // https://help.github.com/en/actions/automating-your-workflow-with-github-actions/authenticating-with-the-github_token#about-the-github_token-secret
     const num1 = core.getInput('number1');
-    const num2 = core.getInput('number1');
+    const num2 = core.getInput('number2');
 
     const result = Number(num1) + Number(num2)
 
