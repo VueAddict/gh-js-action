@@ -1,0 +1,17 @@
+name: js-action
+description: calculator
+
+inputs:
+  number1:
+    required: true
+  number2:
+    required: true
+
+outputs:
+  result:
+
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+  
