@@ -1,0 +1,18 @@
+name: js-action
+
+on:
+    push:
+
+
+jobs:
+    test-js-action:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+            - uses: ./
+              id: js-action-step
+              with:
+                number1: 12
+                number2: 2
+            - run: echo result is ${{ steps.js-action-step.outputs.result }}
